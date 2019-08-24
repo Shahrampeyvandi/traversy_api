@@ -1,0 +1,3 @@
+RewriteEngine On # Turn on the rewriting engine 
+RewriteRule ^api/post/([0-9]*)$ api/post/read_single.php?id=$1 [NC,L]
+RewriteRule ^api/post/all api/post/read.php [NC,L]
